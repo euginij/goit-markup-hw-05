@@ -308,7 +308,6 @@ img {
 }
 .team-icon-container {
   display: flex;
-  justify-content: space-between;
   gap: 24px;
   margin-top: 8px;
 }
@@ -428,7 +427,7 @@ img {
 }
 .futer-container {
   display: flex;
-  gap: 120px;
+
   align-items: baseline;
 }
 .webstudio-logo-futer {
@@ -444,6 +443,7 @@ img {
 .webstudio-logo-futer .span-logo-futer {
   color: #f4f4fd;
 }
+
 .futer-text-list {
   font-weight: 400;
   font-size: 16px;
@@ -456,7 +456,8 @@ img {
 .social-container-item {
   display: flex;
   align-items: baseline;
-  gap: 80px;
+  margin-left: 120px;
+  margin-right: 80px;
 }
 .futer-icon-container {
   display: flex;
@@ -502,11 +503,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 .input-container {
   display: flex;
   gap: 24px;
-  margin-top: 16px;
 }
 .futer-input {
   border: 1px solid #fff;
@@ -604,15 +605,28 @@ img {
   border-color: rgba(0, 0, 0, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, fill;
+  transition-property: background-color;
 }
-.modal-back-button:hover,
-.modal-back-button:focus {
-  background-color: #404bbf;
+.modal-icon {
+  fill: #2e2f42;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+.modal-back-button:hover .modal-icon,
+.modal-back-button:focus .modal-icon {
   fill: #fff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, fill;
+  transition-property: fill;
+}
+
+.modal-back-button:hover,
+.modal-back-button:focus {
+  background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 .modal-title {
   font-weight: 500;
@@ -712,11 +726,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
 }
-
+.checkbox {
+  margin-top: 16px;
+}
 .checkbox-container {
   display: flex;
   gap: 8px;
-  margin-top: 16px;
 }
 
 .modal-submit-title {
