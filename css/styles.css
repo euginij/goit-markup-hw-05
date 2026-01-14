@@ -753,9 +753,9 @@ img {
   display: flex;
   align-items: center;
   cursor: pointer;
-   transition-duration: 250ms;
- transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 .checkbox-custom {
   width: 16px;
@@ -790,17 +790,17 @@ img {
 .checkbox-input:checked + .checkbox-label .modal-submit-icon {
   opacity: 1;
   transform: scale(1);
-   transition-duration: 250ms;
- transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
 }
 .checkbox-input:checked + .checkbox-label .checkbox-custom {
   background-color: #4b51c6;
   border: none;
   fill: #f4f4fd;
-   transition-duration: 250ms;
- transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, fill;
 }
 .button-submit {
   margin-top: 24px;
